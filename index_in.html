@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PhotoStudio-K</title>
+ <style>
+  body {
+    background: #ccc;
+    margin: 0;
+    padding:20px 0;
+  }
+  header{
+    text-align: center;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:0 30px;
+    justify-content: space-evenly;
+  }
+  header ul li a {
+    display: block;
+    margin:0px;
+    padding:10px 20px;
+    text-decoration: none;
+    background: #f00;
+    border-radius: 8px;
+    color:#fff;
+  }
+  main { 
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin:20px;
+  }
+  main p:has(img) {
+    text-align: center;
+  }
+  main h2{
+    text-align: center;
+    font-family: serif;
+  }
+  table {
+    border-collapse: collapse;
+    width:100%;
+  }
+  main table td,
+  main table th {
+  border:solid 1px #ccc;
+  padding:10px 15px;
+  }
+  table th {
+  background: #eee;
+  }
+  footer{
+    padding:20px 0 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+ </style>
+</head>
+
+<body>
+ <header>
+  <h1>PhotoStudio-K</h1>
+    <nav>
+      <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Access</a></li>
+      </ul>
+    </nav>
+ </header>
+
+ <main>
+  <article>
+    <section>
+      <h1>About</h1>
+      <p>記念日を記憶に残るよう、大切に撮影させていただきます。<br>
+      スタジオ撮影・屋外の撮影などさまざまなシチュエーションでの撮影に対応しております</p>
+    </section><!--/Aboutの終わり-->
+    <section>
+      <h1>Menu</h1>
+      <h2>記念日</h2>
+      <p><img src="images/menu01.jpg" alt="記念日"><br>￥6,000～</p>
+      <h2>お誕生日</h2>
+      <p><img src="images/menu02.jpg" alt="誕生日"><br>￥7,000～</p>
+      <h2>七五三</h2>
+      <p><img src="images/menu03.jpg" alt="七五三"><br>￥10,000～</p>
+      <h2>結婚式</h2>
+      <p><img src="images/menu04.jpg" alt="結婚式"><br>￥15,000～</p>
+      <h2>長寿祝い</h2>
+      <p><img src="images/menu05.jpg" alt="長寿祝い"><br>￥9,000～</p>
+    </section><!--/Menuの終わり-->
+    <section>
+        <h1>Reserve</h1>
+        <p>撮影のご予約はお早めにご連絡ください</p>
+        <table>
+					<tr>
+						<th>メニュー</th>
+						<th>期日</th>
+					</tr>
+					<tr>
+						<td>記念日</td>
+						<td>１週間前までに</td>
+					</tr>
+					<tr>
+						<td>お誕生日</td>
+						<td>１０日前までに</td>
+					</tr>
+					<tr>
+						<td>七五三</td>
+						<td>２ヶ月前までに</td>
+					</tr>
+					<tr>
+						<td>結婚式</td>
+						<td>１ヶ月前までに</td>
+					</tr>
+					<tr>
+						<td>長寿祝い</td>
+						<td>１週間前までに</td>
+					</tr>
+				</table>
+		</section><!--/Reserveの終わり-->
+		<section>
+			<h1>Contact</h1>
+			<p>お気軽にお問い合わせください</p>
+			<form>
+				氏名<input type="text"><br>
+				<input type="checkbox">資料請求
+				<input type="checkbox">予約<br>
+				<textarea cols="30" rows="5"></textarea><br>
+				<input type="submit">
+			</form>
+		</section><!--/Contactの終わり-->
+		<section>
+			<h1>Access</h1>
+			<p>〒860-0000<br>
+			熊本県熊本市中央区999-888</p>
+		</section><!--/Accessの終わり-->
+  </article>
+ </main>
+
+ <footer>
+  PhotoStudioK
+ </footer>
+</body>
+
+</html>
